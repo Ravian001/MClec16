@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CSMFragment fragment = new CSMFragment();
+                ITAfternoonFragment fragment = new ITAfternoonFragment();
                 FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.layoutMainActivity,fragment);
                 transaction.commit();
@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         btnThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CSAfternoonFragment f3=new CSAfternoonFragment();
-                FragmentTwo fragment = new FragmentTwo();
+               // CSAfternoonFragment f3=new CSAfternoonFragment();
+                ITAfternoonFragment fragment = new ITAfternoonFragment();
                 FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.layoutMainActivity2,fragment);
                 transaction.commit();
